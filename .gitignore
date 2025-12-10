@@ -1,0 +1,32 @@
+# Build outputs
+bin/
+obj/
+*.log
+
+# VS/IDE
+.vs/
+*.user
+*.suo
+
+# NuGet
+*.nupkg
+packages/
+**/project.lock.json
+
+# Rider/JetBrains
+.idea/
+*.iml
+
+# Publish artifacts
+wwwroot/lib/
+wwwroot/*.map
+
+# User-specific files
+*.userprefs
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Hot Reload/temporary
+*.hotreload

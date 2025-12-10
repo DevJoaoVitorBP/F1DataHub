@@ -1,0 +1,229 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container-fluid home-hero py-4">
+    <div class="row g-4">
+        <div class="col-12 col-xl-7">
+            <h1 class="home-title mb-3">Sua central completa da temporada de Fórmula 1</h1>
+            <p class="text-secondary mb-4">Explore temporadas, corridas, pilotos, construtores e classificações em uma interface única, feita para leitura rápida de dados.</p>
+
+            <div class="card bg-transparent border-0 mb-4">
+                <div class="card-body p-0">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div>
+                            <small class="text-secondary d-block">Temporada</small>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-dark btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    2024
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">2025</a></li>
+                                    <li><a class="dropdown-item" href="#">2024</a></li>
+                                    <li><a class="dropdown-item" href="#">2023</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-secondary mt-3">
+                            <small>Use o seletor para navegar entre anos históricos.</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                        <a class="btn btn-danger" href="#">
+                            Explorar temporada atual
+                            <span class="ms-2">→</span>
+                        </a>
+                        <a class="btn btn-outline-secondary" href="#">Ver panorama da temporada</a>
+                    </div>
+
+                    <div class="text-secondary small">Resumo ao vivo da temporada • Resultados, treinos, classificação • Pronto para integrar com o seu app</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-5">
+            <div class="card home-next-race">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="text-secondary small">Próxima corrida</span>
+                        <span class="text-secondary small">Round 14 · Temporada 2024</span>
+                    </div>
+                    <div class="fw-semibold mb-2">GP de Monza · Autodromo Nazionale Monza</div>
+                    <div class="text-secondary small mb-3">Dom · 08 Set 2024 · 15:00 (local)</div>
+
+                    <div class="row text-center g-3 mb-3">
+                        <div class="col-4">
+                            <div class="home-stat-box">
+                                <div class="display-6">12</div>
+                                <div class="small text-secondary">dias</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="home-stat-box">
+                                <div class="display-6">06</div>
+                                <div class="small text-secondary">horas</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="home-stat-box">
+                                <div class="display-6">18</div>
+                                <div class="small text-secondary">min</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between small text-secondary">
+                        <div><strong>Status:</strong> Programada</div>
+                        <div>Dados de sessões e clima serão carregados automaticamente via API.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid home-highlights py-4">
+    <h6 class="text-secondary mb-3">Destaques da temporada</h6>
+    <p class="text-secondary small mb-4">Visão rápida da última corrida, próximos eventos e líderes de campeonato.</p>
+
+    <div class="row g-3">
+        <div class="col-12 col-lg-4">
+            <div class="card home-card h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="text-secondary small">Próxima corrida</span>
+                        <span class="badge bg-warning text-dark">Upcoming</span>
+                    </div>
+                    <small class="text-secondary d-block">Circuito</small>
+                    <div class="fw-semibold">GP de Monza</div>
+                    <div class="text-secondary small mb-2">Autodromo Nazionale Monza · Itália</div>
+                    <div class="text-secondary small d-flex justify-content-between">
+                        <span>08 Set 2024 (local)</span>
+                        <span>Round 14 de 23</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+            <div class="card home-card h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="text-secondary small">Último resultado</span>
+                        <span class="badge bg-success">Completed</span>
+                    </div>
+                    <small class="text-secondary d-block">GP</small>
+                    <div class="fw-semibold">GP da Bélgica</div>
+                    <div class="text-secondary small mb-2">Vencedor: M. Verstappen · Pódios: NOR · LEC</div>
+                    <div class="text-secondary small d-flex justify-content-between">
+                        <span>Volta mais rápida: 1:47.123</span>
+                        <span>Safety cars: 1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+            <div class="card home-card h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="text-secondary small">Top 3 Pilotos</span>
+                        <span class="badge bg-secondary">Pilotos</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-sm mb-0 align-middle">
+                            <thead>
+                                <tr class="text-secondary ">
+                                    <th class="small">#</th>
+                                    <th class="small">Piloto</th>
+                                    <th class="small">Pts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Max Verstappen</td>
+                                    <td>255</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Lando Norris</td>
+                                    <td>198</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Charles Leclerc</td>
+                                    <td>176</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+            <div class="card home-card h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="text-secondary small">Top 3 Construtores</span>
+                        <span class="badge bg-secondary">Equipes</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-sm mb-0 align-middle">
+                            <thead>
+                                <tr class="text-secondary">
+                                    <th class="small">#</th>
+                                    <th class="small">Equipe</th>
+                                    <th class="small">Pts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Red Bull Racing</td>
+                                    <td>412</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>McLaren</td>
+                                    <td>365</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Ferrari</td>
+                                    <td>332</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-8">
+            <div class="card home-card h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="text-secondary small">Notícias & Atualizações</span>
+                        <span class="small"><i class="bi bi-rss"></i> Conectar feed</span>
+                    </div>
+
+
+                    <div class="home-note mt-3">
+                        <div class="small text-secondary mb-1">Placeholder de conteúdo</div>
+                        <div class="fw-semibold mb-1">Bloco a fazer...</div>
+                        <ul class="text-secondary small mb-0">
+                            <li>Resumo pós-corrida com principais números.</li>
+                            <li>Alertas de mudanças de calendário ou clima.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
