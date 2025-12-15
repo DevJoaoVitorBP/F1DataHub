@@ -2,5 +2,4 @@
   <Project Path="F1DataHub.Infraestructure/F1DataHub.Infraestructure.csproj" Id="235a28f0-be9c-4833-bbac-efad62e58d6c" />
   <Project Path="F1DataHub.Model/F1DataHub.Model.csproj" Id="b6a31c5e-f09b-485a-9750-682c2f1571ca" />
   <Project Path="F1DataHub/F1DataHub.Apresentation.csproj" />
-  <Project Path="Services/F1DataHub.Service.csproj" Id="16fde06f-51a8-4dc2-bab1-3a0d30607045" />
 </Solution>

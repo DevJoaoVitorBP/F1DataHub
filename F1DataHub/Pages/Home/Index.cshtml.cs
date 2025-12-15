@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace F1DataHub.Pages
+namespace F1DataHub.Apresentation.Pages.Home
 {
     public class IndexModel : PageModel
     {
