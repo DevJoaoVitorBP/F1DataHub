@@ -1,10 +1,10 @@
-function qs(s, r = document) { return r.querySelector(s); }
-function qsa(s, r = document) { return Array.from(r.querySelectorAll(s)); }
+function selectOne(selector, root = document) { return root.querySelector(selector); }
+function selectAll(selector, root = document) { return Array.from(root.querySelectorAll(selector)); }
 
 export function initRacesPage() {
-  const chips = qs('#raceStatusChips');
-  const rows = qsa('[data-race-row]');
-  const dropdown = qs('.races-season-dropdown');
+  const chips = selectOne('#raceStatusChips');
+  const rows = selectAll('[data-race-row]');
+  const dropdown = selectOne('.races-season-dropdown');
 
   if (!chips || rows.length === 0) {
     return;
