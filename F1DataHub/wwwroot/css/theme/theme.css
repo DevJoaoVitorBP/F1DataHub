@@ -1,0 +1,61 @@
+.theme-dark {
+    background-color: #0f0f10;
+    color: #e6e6e6;
+}
+
+.theme-dark .navbar,
+.theme-dark .border-bottom {
+    background-color: #121213 !important;
+    border-color: #2a2a2a !important;
+}
+
+.theme-dark .nav-link,
+.theme-dark .navbar-brand,
+.theme-dark .btn-link {
+    color: #e6e6e6 !important;
+}
+
+.theme-dark .input-group-text,
+.theme-dark .form-control {
+    background-color: #1b1b1c;
+    color: #e6e6e6;
+    border-color: #2a2a2a;
+}
+
+.theme-dark .form-control::placeholder {
+    color: #bdbdbd;
+}
+
+.theme-dark .btn-outline-primary {
+    color: #9ec3ff;
+    border-color: #2a2a2a;
+}
+
+.theme-dark .footer {
+    background-color: #121213;
+    border-top-color: #2a2a2a;
+}
+
+/* Dark tables and cards fix for theme-dark */
+.theme-dark .table { --bs-table-bg: transparent; background-color: #151516; color: #e6e6e6; }
+.theme-dark .table > :not(caption) > * > * { background-color: transparent !important; color: #e6e6e6; }
+.theme-dark .table thead { background-color: rgba(255,255,255,.03) !important; }
+.theme-dark .table thead th { color: #cfcfd6; border-color: rgba(255,255,255,.08); }
+.theme-dark .table tbody tr { background-color: transparent !important; }
+.theme-dark .table tbody tr:hover { background-color: rgba(255,255,255,.04) !important; }
+
+/* Ensure cards don't inherit light backgrounds */
+.theme-dark .card { background-color: rgba(255,255,255,.02); color: #e6e6e6; border-color: rgba(255,255,255,.08); }
+.theme-dark .card .text-secondary { color: rgba(200,200,210,.75) !important; }
+
+/* Badges contrast in dark mode */
+.theme-dark .badge { color: #111; }
+.theme-dark .badge.bg-secondary { background-color: #c9c9d2 !important; color: #111; }
+
+/* Buttons: improve contrast in dark mode */
+.theme-dark .btn-outline-secondary { color: #cfd0d7 !important; border-color: rgba(255,255,255,.18) !important; }
+.theme-dark .btn-outline-secondary:hover { background-color: rgba(255,255,255,.08) !important; }
+.theme-dark .btn-danger { box-shadow: 0 0 0 0 rgba(0,0,0,0); }
+
+/* Dropdown chip/button alignment in dark */
+.theme-dark .btn-dark.btn-sm { background-color: #1f2024; border-color: rgba(255,255,255,.14); }
