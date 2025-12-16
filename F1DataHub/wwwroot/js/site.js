@@ -1,17 +1,9 @@
-﻿(function () {
-    const key = 'theme';
-    const body = document.body;
-    const saved = localStorage.getItem(key);
+﻿import { initTheme } from './core/theme.js';
+import { initRacesPage } from './pages/races.js';
 
-    if (saved === 'dark') {
-        body.classList.add('theme-dark');
-    }
+initTheme();
 
-    const toggle = document.getElementById('themeToggle');
-    if (toggle) {
-        toggle.addEventListener('click', function () {
-            const isDark = body.classList.toggle('theme-dark');
-            localStorage.setItem(key, isDark ? 'dark' : 'light');
-        });
-    }
-})();
+const currentPath = window.location.pathname.toLowerCase();
+if (currentPath.includes('/races')) {
+    initRacesPage();
+}
