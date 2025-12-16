@@ -83,6 +83,8 @@
         background: #f7f7f8;
     }
 
+    /* Light-mode active background intentionally differs from the dark theme's
+       rgba(220,53,69,.06) to keep a softer, neutral contrast on white cards. */
     :root .season-item.active {
         border-left-color: #dc3545;
         background: #f7fafc;
