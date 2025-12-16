@@ -44,7 +44,7 @@
 .theme-dark .table tbody tr { background-color: transparent !important; }
 .theme-dark .table tbody tr:hover { background-color: rgba(255,255,255,.04) !important; }
 
-/* Ensure cards don’t inherit light backgrounds */
+/* Ensure cards don't inherit light backgrounds */
 .theme-dark .card { background-color: rgba(255,255,255,.02); color: #e6e6e6; border-color: rgba(255,255,255,.08); }
 .theme-dark .card .text-secondary { color: rgba(200,200,210,.75) !important; }
 
