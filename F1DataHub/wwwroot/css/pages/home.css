@@ -44,15 +44,27 @@
 /* Ensure next-race card uses dark palette regardless of light-mode rules */
 .theme-dark .home-next-race { 
   background: radial-gradient(110% 120% at 15% -10%, rgba(140,30,30,.55) 0%, rgba(45,20,20,.30) 40%, rgba(16,16,18,.96) 100%) !important; 
-  border: 1px solid rgba(255,255,255,.06) !important; 
-  border-radius: 16px; 
+  border-color: rgba(255,255,255,.06);
   box-shadow: 0 28px 70px rgba(0,0,0,.6); 
   color: #e6e6e6 !important;
 }
-.theme-dark .home-next-race .card-body { padding: 1.25rem 1.25rem; }
-.theme-dark .home-next-race .home-stat-box { background: rgba(255,255,255,.04) !important; border: 1px solid rgba(255,255,255,.08) !important; border-radius: 12px; box-shadow: none; }
-.theme-dark .home-next-race .display-6 { color:#f3f3f4 !important; font-weight:700; }
-.theme-dark .home-next-race .small, .theme-dark .home-next-race .text-secondary { color: rgba(200,200,210,.75) !important; }
+.theme-dark .home-next-race .card-body { 
+  padding: 1.25rem 1.25rem; 
+}
+.theme-dark .home-next-race .home-stat-box { 
+  background: rgba(255,255,255,.04) !important; 
+  border: 1px solid rgba(255,255,255,.08) !important; 
+  border-radius: 12px; 
+  box-shadow: none; 
+}
+.theme-dark .home-next-race .display-6 { 
+  color: #f3f3f4 !important; 
+  font-weight: 700; 
+}
+.theme-dark .home-next-race .small, 
+.theme-dark .home-next-race .text-secondary { 
+  color: rgba(200,200,210,.75) !important; 
+}
 
 /* Buttons: improve contrast in dark mode within home */
 .theme-dark .btn-outline-secondary { color: #cfd0d7 !important; border-color: rgba(255,255,255,.18) !important; }
