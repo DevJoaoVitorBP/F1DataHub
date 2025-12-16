@@ -10,7 +10,7 @@
 .theme-dark .season-item.active { background: rgba(220,53,69,.12); border-left-color: #ff6b6b; }
 .theme-dark .season-section h5, .theme-dark .season-section h6 { color: #f3f3f4; }
 
-/* Seasons page – light mode fine-tuning */
+/* Seasons page - light mode fine-tuning */
 :root .season-section { background: transparent; }
 :root .season-card { background: #ffffff; border: 1px solid rgba(0,0,0,.08); border-radius: 16px; box-shadow: 0 10px 26px rgba(0,0,0,.05); }
 :root .season-card .card-body { padding: 1rem 1.25rem; }
