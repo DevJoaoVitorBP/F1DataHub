@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Pages\About\" />
-    <Folder Include="Pages\Races\" />
     <Folder Include="Pages\Drivers\" />
     <Folder Include="Pages\Constructors\" />
     <Folder Include="Pages\Standings\" />

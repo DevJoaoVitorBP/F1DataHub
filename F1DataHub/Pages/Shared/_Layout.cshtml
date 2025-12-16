@@ -4,11 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - F1DataHub</title>
-    <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/pages/home.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/pages/seasons.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/F1DataHub.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -29,7 +26,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Seasons/Index">Temporadas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Races">Corridas</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Races/Index">Corridas</a>
                         </li>
                         <li class="nav-item">   
                             <a class="nav-link text-dark" asp-area="" asp-page="/Constructors">Construtores</a>
@@ -44,7 +41,6 @@
 
                     <button id="themeToggle" class="btn btn-link text-dark ms-3 d-flex align-items-center" type="button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" class="me-2">
-                            <!-- Ícone Lua -->
                             <path d="M6 0a7 7 0 1 0 7 7c0-.24-.013-.477-.04-.709A5.5 5.5 0 0 1 6 .001Z" />
                         </svg>
                         Modo
@@ -67,7 +63,7 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="module" src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

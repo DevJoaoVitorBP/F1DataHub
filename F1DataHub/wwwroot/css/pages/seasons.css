@@ -1,41 +1,143 @@
-.season-section h5 { font-weight: 700; }
-.season-card { background: var(--season-card-bg, #fff); border: 1px solid rgba(0,0,0,.08); border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.05); }
-.season-list { max-height: 520px; overflow: auto; }
-.season-item { border-left: 3px solid transparent; }
-.season-item.active { border-left-color: #dc3545; background: rgba(220,53,69,.06); }
-.season-card-resume { background: #f7fafc; border-radius: 12px; padding: .75rem; margin-bottom: 1rem; margin-right: .5rem; width: fit-content; }
+.season-section h5 {
+    font-weight: 700;
+}
+
+.season-card {
+    background: var(--season-card-bg, #fff);
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.05);
+}
+
+.season-list {
+    max-height: 520px;
+    overflow: auto;
+}
+
+.season-item {
+    border-left: 3px solid transparent;
+}
+
+    .season-item.active {
+        border-left-color: #dc3545;
+        background: rgba(220,53,69,.06);
+    }
+
+.season-card-resume {
+    background: #f7fafc;
+    border-radius: 12px;
+    padding: .75rem;
+    margin-bottom: 1rem;
+    margin-right: .5rem;
+    width: fit-content;
+}
 
 /* Dark theme overrides */
-.theme-dark .season-card { background: rgba(255,255,255,.02); border: 1px solid rgba(255,255,255,.10); box-shadow: inset 0 1px 0 rgba(255,255,255,.04), 0 10px 28px rgba(0,0,0,.35); }
-.theme-dark .season-item.active { background: rgba(220,53,69,.12); border-left-color: #ff6b6b; }
-.theme-dark .season-section h5, .theme-dark .season-section h6 { color: #f3f3f4; }
+.theme-dark .season-card {
+    background: rgba(255,255,255,.02);
+    border: 1px solid rgba(255,255,255,.10);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.04), 0 10px 28px rgba(0,0,0,.35);
+}
+
+.theme-dark .season-item.active {
+    background: rgba(220,53,69,.12);
+    border-left-color: #ff6b6b;
+}
+
+.theme-dark .season-section h5, .theme-dark .season-section h6 {
+    color: #f3f3f4;
+}
 
 /* Seasons page - light mode fine-tuning */
-:root .season-section { background: transparent; }
-:root .season-card { background: #ffffff; border: 1px solid rgba(0,0,0,.08); border-radius: 16px; box-shadow: 0 10px 26px rgba(0,0,0,.05); }
-:root .season-card .card-body { padding: 1rem 1.25rem; }
-:root .season-section h5 { font-weight: 700; }
+:root .season-section {
+    background: transparent;
+}
+
+:root .season-card {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 16px;
+    box-shadow: 0 10px 26px rgba(0,0,0,.05);
+}
+
+    :root .season-card .card-body {
+        padding: 1rem 1.25rem;
+    }
+
+:root .season-section h5 {
+    font-weight: 700;
+}
 
 /* Sidebar list visuals */
-:root .season-list { max-height: 520px; overflow-y: auto; }
-:root .season-item { border-left: 3px solid transparent; padding: .75rem .75rem; }
-:root .season-item:hover { background: #f7f7f8; }
-:root .season-item.active { border-left-color: #dc3545; background: white; }
-:root .season-section .input-group-text { background: #f8f9fa; border-color: rgba(0,0,0,.08); }
+:root .season-list {
+    max-height: 520px;
+    overflow-y: auto;
+}
+
+:root .season-item {
+    border-left: 3px solid transparent;
+    padding: .75rem .75rem;
+}
+
+    :root .season-item:hover {
+        background: #f7f7f8;
+    }
+
+    :root .season-item.active {
+        border-left-color: #dc3545;
+        background: #f7fafc;
+    }
+
+:root .season-section .input-group-text {
+    background: #f8f9fa;
+    border-color: rgba(0,0,0,.08);
+}
 
 /* Summary blocks spacing and soft separations */
-:root .season-card h6 { font-weight: 700; }
-:root .season-card .text-secondary { color: #6c757d !important; }
+:root .season-card h6 {
+    font-weight: 700;
+}
+
+:root .season-card .text-secondary {
+    color: #6c757d !important;
+}
 
 /* Calendar table */
-:root .season-card .table { background-color: #fff; color: #212529; }
-:root .season-card .table thead { background-color: #f8f9fa; }
-:root .season-card .table thead th { font-weight: 600; color: #6c757d; border-color: rgba(0,0,0,.08); }
-:root .season-card .table td, :root .season-card .table th { border-color: rgba(0,0,0,.08); }
+:root .season-card .table {
+    background-color: #fff;
+    color: #212529;
+}
+
+    :root .season-card .table thead {
+        background-color: #f8f9fa;
+    }
+
+        :root .season-card .table thead th {
+            font-weight: 600;
+            color: #6c757d;
+            border-color: rgba(0,0,0,.08);
+        }
+
+    :root .season-card .table td, :root .season-card .table th {
+        border-color: rgba(0,0,0,.08);
+    }
 
 /* Filters buttons */
-:root .btn-outline-secondary.active { background-color: #e9ecef; color: #212529; border-color: rgba(0,0,0,.12); }
+:root .btn-outline-secondary.active {
+    background-color: #e9ecef;
+    color: #212529;
+    border-color: rgba(0,0,0,.12);
+}
 
 /* Badges colors (keep readable) */
-:root .badge.bg-success { background-color: #d9f3e4 !important; color: #198754 !important; border: 1px solid rgba(25,135,84,.25); }
-:root .badge.bg-warning { background-color: #fff1cc !important; color: #684b00 !important; border: 1px solid rgba(204,153,0,.3); }
+:root .badge.bg-success {
+    background-color: #d9f3e4 !important;
+    color: #198754 !important;
+    border: 1px solid rgba(25,135,84,.25);
+}
+
+:root .badge.bg-warning {
+    background-color: #fff1cc !important;
+    color: #684b00 !important;
+    border: 1px solid rgba(204,153,0,.3);
+}
