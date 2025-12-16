@@ -1,5 +1,6 @@
 @import url('./base/base.css');
 @import url('./theme/theme.css');
+/* Reserved for future component styles */
 @import url('./components/components.css');
 @import url('./pages/home.css');
 @import url('./pages/seasons.css');
