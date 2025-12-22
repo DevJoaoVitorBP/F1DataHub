@@ -1,0 +1,132 @@
+﻿@page
+@model F1DataHub.Apresentation.Pages.Drivers.IndexModel
+@{
+    ViewData["Title"] = "Pilotos";
+}
+
+<div class="container-fluid drivers-page py-4">
+    <div class="mb-3">
+        <div class="text-secondary xsmall text-uppercase fw-semibold">Pilotos · Temporada 2024</div>
+        <h2 class="mb-1 fw-bold">Grid de pilotos</h2>
+        <p class="text-secondary mb-0">Seleção de temporada, busca e tabela única de pilotos.</p>
+    </div>
+
+    <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
+        <div class="btn-group drivers-season-dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">Temporada 2024</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" data-year="Temporada 2025">Temporada 2025</a></li>
+                <li><a class="dropdown-item" href="#" data-year="Temporada 2024">Temporada 2024</a></li>
+                <li><a class="dropdown-item" href="#" data-year="Temporada 2023">Temporada 2023</a></li>
+            </ul>
+        </div>
+        <div class="drivers-search input-group">
+            <span class="input-group-text bg-white border-end-0"><i class="bi bi-search"></i></span>
+            <input id="driverSearch" type="text" class="form-control border-start-0" placeholder="Buscar por nome" aria-label="Buscar por nome" />
+        </div>
+    </div>
+
+    <div class="card drivers-card">
+        <div class="card-body">
+            <div class="d-flex justify-content-between flex-wrap gap-2 align-items-start mb-3">
+                <div>
+                    <div class="text-uppercase small fw-semibold mb-1">Pilotos da temporada</div>
+                    <p class="text-secondary small mb-0">Tabela simples com nome, equipe, país e pontos. Ideal para primeira versão do projeto.</p>
+                </div>
+                <small class="text-secondary">Exemplo com 6 pilotos</small>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-borderless align-middle drivers-table">
+                    <thead>
+                        <tr class="text-secondary">
+                            <th scope="col" class="small">#</th>
+                            <th scope="col" class="small">Piloto</th>
+                            <th scope="col" class="small">Equipe</th>
+                            <th scope="col" class="small">País</th>
+                            <th scope="col" class="small text-end">Pontos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-driver-row data-name="max verstappen">
+                            <td>1</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="driver-avatar"></span>
+                                    <span>Max Verstappen</span>
+                                </div>
+                            </td>
+                            <td>Red Bull Racing</td>
+                            <td><span class="flag-dot"></span> Países Baixos</td>
+                            <td class="text-end">255</td>
+                        </tr>
+                        <tr data-driver-row data-name="lando norris">
+                            <td>2</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="driver-avatar"></span>
+                                    <span>Lando Norris</span>
+                                </div>
+                            </td>
+                            <td>McLaren F1 Team</td>
+                            <td><span class="flag-dot"></span> Reino Unido</td>
+                            <td class="text-end">188</td>
+                        </tr>
+                        <tr data-driver-row data-name="charles leclerc">
+                            <td>3</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="driver-avatar"></span>
+                                    <span>Charles Leclerc</span>
+                                </div>
+                            </td>
+                            <td>Scuderia Ferrari</td>
+                            <td><span class="flag-dot"></span> Mônaco</td>
+                            <td class="text-end">182</td>
+                        </tr>
+                        <tr data-driver-row data-name="carlos sainz">
+                            <td>4</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="driver-avatar"></span>
+                                    <span>Carlos Sainz</span>
+                                </div>
+                            </td>
+                            <td>Scuderia Ferrari</td>
+                            <td><span class="flag-dot"></span> Espanha</td>
+                            <td class="text-end">150</td>
+                        </tr>
+                        <tr data-driver-row data-name="lewis hamilton">
+                            <td>5</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="driver-avatar"></span>
+                                    <span>Lewis Hamilton</span>
+                                </div>
+                            </td>
+                            <td>Mercedes-AMG Petronas</td>
+                            <td><span class="flag-dot"></span> Reino Unido</td>
+                            <td class="text-end">132</td>
+                        </tr>
+                        <tr data-driver-row data-name="fernando alonso">
+                            <td>6</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="driver-avatar"></span>
+                                    <span>Fernando Alonso</span>
+                                </div>
+                            </td>
+                            <td>Aston Martin Aramco</td>
+                            <td><span class="flag-dot"></span> Espanha</td>
+                            <td class="text-end">88</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="d-flex justify-content-between flex-wrap gap-2 mt-3 text-secondary small">
+                <span>Mostrando 6 pilotos.</span>
+            </div>
+        </div>
+    </div>
+</div>
