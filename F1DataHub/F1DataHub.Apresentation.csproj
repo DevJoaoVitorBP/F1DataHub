@@ -7,10 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\About\" />
-    <Folder Include="Pages\Drivers\" />
-    <Folder Include="Pages\Constructors\" />
-    <Folder Include="Pages\Standings\" />
+    <Compile Remove="Pages\About\**" />
+    <Compile Remove="Pages\Constructors\**" />
+    <Compile Remove="Pages\Standings\**" />
+    <Content Remove="Pages\About\**" />
+    <Content Remove="Pages\Constructors\**" />
+    <Content Remove="Pages\Standings\**" />
+    <EmbeddedResource Remove="Pages\About\**" />
+    <EmbeddedResource Remove="Pages\Constructors\**" />
+    <EmbeddedResource Remove="Pages\Standings\**" />
+    <None Remove="Pages\About\**" />
+    <None Remove="Pages\Constructors\**" />
+    <None Remove="Pages\Standings\**" />
   </ItemGroup>
 
 </Project>

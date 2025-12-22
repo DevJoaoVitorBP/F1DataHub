@@ -1,0 +1,22 @@
+.drivers-page { background: linear-gradient(180deg, #fff, #f8f9fb); }
+.drivers-page h2 { font-weight: 700; }
+
+.drivers-card { border: 1px solid rgba(0,0,0,.08); border-radius: 18px; box-shadow: 0 12px 30px rgba(15,23,42,.08); background: #fff; }
+
+.drivers-search .form-control { box-shadow: none; }
+.drivers-search .input-group-text { border-color: #dee2e6; }
+
+.drivers-table thead th { border-bottom: 1px solid rgba(0,0,0,.08); font-weight: 600; }
+.drivers-table tbody tr { border-bottom: 1px solid rgba(0,0,0,.04); font-size: .95rem; }
+.drivers-table tbody tr:last-child { border-bottom: none; }
+
+.driver-avatar { width: 32px; height: 32px; border-radius: 999px; background: linear-gradient(135deg, #eef1f5, #dce1e7); display: inline-block; border: 1px solid rgba(0,0,0,.05); }
+.flag-dot { width: 10px; height: 10px; border-radius: 999px; background: #c9ccd1; display: inline-block; margin-right: .35rem; }
+
+/* Dark mode */
+.theme-dark .drivers-page { background: linear-gradient(180deg, #0d0f12, #11131a); color: #f1f5f9; }
+.theme-dark .drivers-card { background: rgba(17,19,26,.95); border: 1px solid rgba(255,255,255,.08); box-shadow: 0 18px 40px rgba(0,0,0,.65); }
+.theme-dark .drivers-table thead th { border-color: rgba(255,255,255,.08); }
+.theme-dark .drivers-table tbody tr { border-color: rgba(255,255,255,.05); }
+.theme-dark .driver-avatar { background: linear-gradient(135deg, #1f2430, #2a3240); border-color: rgba(255,255,255,.08); }
+.theme-dark .flag-dot { background: rgba(255,255,255,.45); }
